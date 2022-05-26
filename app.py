@@ -6,8 +6,7 @@ import pickle
 app = Flask(__name__)       # class object(camel letter)
 
 
-
-model = pickle.load(open("artifacts\student_model.pkl",'rb'))
+model = pickle.load(open("student_model.pkl",'rb'))
 
 
 @app.route('/', methods=["POST","GET"])
